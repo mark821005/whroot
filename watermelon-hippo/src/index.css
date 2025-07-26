@@ -1,5 +1,12 @@
 @import "tailwindcss";
 @plugin "flowbite-react/plugin/tailwindcss";
 @source "../.flowbite-react/class-list.json";
+@theme {
+  --font-display: "Old Standard TT";
+}
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  color: var(--color-amber-100);
+}
