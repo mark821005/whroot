@@ -3,9 +3,15 @@ import {
   NavbarCollapse,
   NavbarLink,
   NavbarToggle,
+  Button,
 } from "flowbite-react";
+import { HiOutlineMenuAlt4 } from "react-icons/hi";
+import { useState } from "react";
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleClose = () => setIsOpen(false);
   return (
     <header className="fixed top-4 left-[2vw] z-25 m-auto w-[96vw]">
       <Navbar
@@ -17,17 +23,15 @@ export default function Header() {
           Watermelon Hippo
         </span>
         <NavbarToggle />
-        <NavbarCollapse>
-          <NavbarLink href="#" active>
-            Home
-          </NavbarLink>
-          <NavbarLink as={NavbarLink} href="#">
-            About
-          </NavbarLink>
-          <NavbarLink href="#">Services</NavbarLink>
-          <NavbarLink href="#">Pricing</NavbarLink>
-          <NavbarLink href="#">Contact</NavbarLink>
-        </NavbarCollapse>
+        <div className="flex items-center justify-center">
+          <Button
+            onClick={() => setIsOpen(true)}
+            color="dark"
+            className="dark:text-color-amber-50 dark:bg-neutral-800 dark:hover:bg-neutral-900 focus:dark:ring-neutral-700"
+          >
+            <HiOutlineMenuAlt4 className="h-5 w-3" />
+          </Button>
+        </div>
       </Navbar>
     </header>
   );
