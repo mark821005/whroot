@@ -4,6 +4,7 @@ import { createRoot } from "react-dom/client";
 import { ThemeInit } from "../.flowbite-react/init";
 import Header from "./Header.tsx";
 import Hero from "./Hero";
+import Footer from "./Footer";
 import "./index.css";
 
 createRoot(document.getElementById("root")!).render(
@@ -11,6 +12,7 @@ createRoot(document.getElementById("root")!).render(
     <ThemeInit />
     <Header />
     <Hero />
+    <Footer />
   </StrictMode>,
 );
 
