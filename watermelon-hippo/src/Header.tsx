@@ -37,7 +37,7 @@ export default function Header() {
         <Navbar
           fluid
           rounded
-          className="text-amber-100 backdrop-blur-md dark:bg-neutral-800/80"
+          className="text-amber-100 backdrop-blur-md dark:bg-neutral-900/80"
         >
           <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
             Watermelon Hippo

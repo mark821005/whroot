@@ -3,11 +3,31 @@ import { HiOutlineRefresh } from "react-icons/hi";
 import { useState } from "react";
 
 const quotes = [
-  "Is a hippopotamus a hippopotamus or just a really cool opotamus?",
-  "The hippopotamus is a vegetarian and looks like a wall. Lions who eat only red meat are sleek and slim. Are nutritionists on the wrong track?",
-  "I have seen the hippopotamus, both asleep and awake; and I can assure you that, awake or asleep, he is the ugliest of the works of God.",
-  "A man is born an artist as a hippopotamus is born a hippopotamus; and you can no more make yourself one than you can make yourself a giraffe.",
-  "The hippopotamus looks monogamous- he looks as if he would have to be.",
+  {
+    quote: "Is a hippopotamus a hippopotamus or just a really cool opotamus?",
+    author: "Mitch Hedberg",
+  },
+  {
+    quote:
+      "The hippopotamus is a vegetarian and looks like a wall. Lions who eat only red meat are sleek and slim. Are nutritionists on the wrong track?",
+    author: "Erma Bombeck",
+  },
+  {
+    quote:
+      "I have seen the hippopotamus, both asleep and awake; and I can assure you that, awake or asleep, he is the ugliest of the works of God.",
+    author: "Thomas B. Macauley",
+  },
+
+  {
+    quote:
+      "A man is born an artist as a hippopotamus is born a hippopotamus; and you can no more make yourself one than you can make yourself a giraffe.",
+    author: "John Ruskin",
+  },
+  {
+    quote:
+      "The hippopotamus looks monogamous- he looks as if he would have to be.",
+    author: "Will Cuppy",
+  },
 ];
 
 export default function Hero() {
@@ -32,18 +52,20 @@ export default function Hero() {
       </h1>
       <div
         id="quoteContainer"
-        className="container mx-auto border-l py-2 pl-16"
+        className="container mx-auto border-l border-amber-100/30 py-2 pl-8"
       >
         <div
           id="quote"
           className="quote text-md mb-16 max-w-xl transition-all duration-300"
         >
-          {renderQuote}
+          "{renderQuote.quote}" <br />
+          <br />
+          <span className="font-display italic">{renderQuote.author}</span>
         </div>
         <Button
           onClick={handleClick}
           color="dark"
-          className="dark:text-color-amber-50 dark:bg-neutral-800 dark:hover:bg-neutral-900 focus:dark:ring-neutral-700"
+          className="dark:text-color-amber-50 dark:bg-neutral-900 dark:hover:bg-neutral-900 focus:dark:ring-neutral-700"
         >
           <HiOutlineRefresh className="mr-2 h-5 w-5" />
           Requote
