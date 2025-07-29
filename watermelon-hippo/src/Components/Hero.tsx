@@ -83,8 +83,7 @@ export default function Hero() {
             color="dark"
             className="dark:text-color-amber-50 mt-4 dark:bg-neutral-900 dark:hover:bg-neutral-900 focus:dark:ring-neutral-700"
           >
-            <HiOutlineRefresh className="mr-2 h-5 w-5" />
-            Requote
+            <HiOutlineRefresh className="h-5 w-5" />
           </Button>
         </div>
       </div>

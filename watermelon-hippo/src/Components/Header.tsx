@@ -26,6 +26,7 @@ import {
   HiShoppingBag,
   HiUsers,
 } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -79,14 +80,9 @@ export default function Header() {
                 <SidebarItems>
                   <SidebarItemGroup>
                     <SidebarItem href="/" icon={HiChartPie}>
-                      Dashboard
+                      Home
                     </SidebarItem>
-                    <SidebarItem
-                      href="/e-commerce/products"
-                      icon={HiShoppingBag}
-                    >
-                      Products
-                    </SidebarItem>
+                    <Link to="/about">About</Link>
                     <SidebarItem href="/users/list" icon={HiUsers}>
                       Users list
                     </SidebarItem>
