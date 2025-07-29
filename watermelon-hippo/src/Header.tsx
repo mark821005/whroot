@@ -37,12 +37,11 @@ export default function Header() {
         <Navbar
           fluid
           rounded
-          className="text-amber-100 backdrop-blur-md dark:bg-neutral-900/80"
+          className="text-amber-100 backdrop-blur-md dark:bg-black/70"
         >
           <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
             Watermelon Hippo
           </span>
-          <NavbarToggle />
           <div className="flex items-center justify-center">
             <Button
               onClick={() => setIsOpen(true)}
