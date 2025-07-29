@@ -6,7 +6,7 @@ export default function About() {
   return (
     <>
       <Header />
-      <Hero />
+      <Hero titleone="About" titletwo="Doug" />
       <Footer />
     </>
   );

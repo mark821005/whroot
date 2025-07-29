@@ -50,7 +50,7 @@ const quotes = [
   },
 ];
 
-export default function Hero() {
+export default function Hero(props: any) {
   const [randQuoteIndex, setRandQuoteIndex] = useState(
     Math.floor(Math.random() * quotes.length),
   );
@@ -66,9 +66,13 @@ export default function Hero() {
   const renderQuote = quotes[randQuoteIndex];
 
   return (
-    <div className="relative min-h-screen min-w-full bg-[url(/public/doug_hero.webp)] bg-top-right bg-no-repeat py-24">
+    <div
+      className={`relative min-h-screen min-w-full bg-[url(/public/${props.image})] bg-top-right bg-no-repeat py-24`}
+    >
       <h1 className="ls mb-32 text-[17vw] leading-[13vw] tracking-tight">
-        watermelon <span className="font-display italic">hippo</span>
+        {props.titleone}
+        <br />
+        <span className="font-display italic">{props.titletwo}</span>
       </h1>
       <div id="quoteContainer" className="container mx-auto">
         <div

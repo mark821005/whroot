@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Hero />
+      <Hero titleone="Watermelon" titletwo="Hippo" image="doug_hero.webp" />
       <Footer />
     </>
   );
