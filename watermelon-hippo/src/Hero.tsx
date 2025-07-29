@@ -1,6 +1,6 @@
 import { Button } from "flowbite-react";
-import { useEffect } from "react";
 import { HiOutlineRefresh } from "react-icons/hi";
+import { useState } from "react";
 
 const quotes = [
   "Is a hippopotamus a hippopotamus or just a really cool opotamus?",
@@ -11,37 +11,37 @@ const quotes = [
 ];
 
 export default function Hero() {
-  useEffect(() => {
-    const quoteWrap = document.getElementById("quote");
-    function genQuote() {
-      const genned = Math.floor(Math.random() * quotes.length);
-      if (quoteWrap) {
-        quoteWrap.textContent = '"' + quotes[genned] + '"';
-      }
+  const [randQuoteIndex, setRandQuoteIndex] = useState(
+    Math.floor(Math.random() * quotes.length),
+  );
+  const handleClick = () => {
+    const newRandQuoteIndex = Math.floor(Math.random() * quotes.length);
+    if (newRandQuoteIndex === randQuoteIndex) {
+      handleClick();
+    } else {
+      setRandQuoteIndex(newRandQuoteIndex);
     }
-    genQuote();
-  }, []);
-  function genQuote(
-    event?: React.MouseEvent<HTMLButtonElement, MouseEvent>,
-  ): void {
-    const quoteWrap = document.getElementById("quote");
-    const genned = Math.floor(Math.random() * quotes.length);
-    if (quoteWrap) {
-      quoteWrap.textContent = '"' + quotes[genned] + '"';
-    }
-  }
+  };
+
+  const renderQuote = quotes[randQuoteIndex];
+
   return (
     <div className="relative min-h-screen min-w-full bg-[url(/public/doug_hero.webp)] bg-top-right bg-no-repeat py-24">
       <h1 className="ls mb-32 text-[16vw] leading-[13vw] tracking-tight">
         watermelon <span className="font-display italic">hippo</span>
       </h1>
-      <div id="quoteContainer" className="container mx-auto">
+      <div
+        id="quoteContainer"
+        className="container mx-auto border-l py-2 pl-16"
+      >
         <div
           id="quote"
-          className="quote font-display mb-16 max-w-xl text-xl italic transition-all duration-300"
-        ></div>
+          className="quote text-md mb-16 max-w-xl transition-all duration-300"
+        >
+          {renderQuote}
+        </div>
         <Button
-          onClick={genQuote}
+          onClick={handleClick}
           color="dark"
           className="dark:text-color-amber-50 dark:bg-neutral-800 dark:hover:bg-neutral-900 focus:dark:ring-neutral-700"
         >
