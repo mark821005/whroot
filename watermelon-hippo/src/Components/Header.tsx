@@ -1,31 +1,17 @@
 import {
   Navbar,
-  NavbarCollapse,
-  NavbarLink,
-  NavbarToggle,
   Button,
   Drawer,
   DrawerHeader,
   DrawerItems,
   Sidebar,
-  SidebarItem,
   SidebarItemGroup,
   SidebarItems,
   TextInput,
 } from "flowbite-react";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { useState } from "react";
-import {
-  HiChartPie,
-  HiClipboard,
-  HiCollection,
-  HiInformationCircle,
-  HiLogin,
-  HiPencil,
-  HiSearch,
-  HiShoppingBag,
-  HiUsers,
-} from "react-icons/hi";
+import { HiSearch } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
 export default function Header() {
@@ -38,7 +24,7 @@ export default function Header() {
         <Navbar
           fluid
           rounded
-          className="text-amber-100 backdrop-blur-md dark:bg-black/70"
+          className="text-amber-100 backdrop-blur-lg dark:bg-black/30"
         >
           <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
             Watermelon Hippo
@@ -79,39 +65,18 @@ export default function Header() {
                 </form>
                 <SidebarItems>
                   <SidebarItemGroup>
-                    <SidebarItem href="/" icon={HiChartPie}>
+                    <Link
+                      className="mb-2 block rounded-md p-2 dark:bg-neutral-800/50 hover:dark:bg-neutral-800/75"
+                      to="/"
+                    >
                       Home
-                    </SidebarItem>
-                    <Link to="/about">About</Link>
-                    <SidebarItem href="/users/list" icon={HiUsers}>
-                      Users list
-                    </SidebarItem>
-                    <SidebarItem href="/authentication/sign-in" icon={HiLogin}>
-                      Sign in
-                    </SidebarItem>
-                    <SidebarItem href="/authentication/sign-up" icon={HiPencil}>
-                      Sign up
-                    </SidebarItem>
-                  </SidebarItemGroup>
-                  <SidebarItemGroup>
-                    <SidebarItem
-                      href="https://github.com/themesberg/flowbite-react/"
-                      icon={HiClipboard}
+                    </Link>
+                    <Link
+                      className="mb-2 block rounded-md p-2 dark:bg-neutral-800/50 hover:dark:bg-neutral-800/75"
+                      to="/pop-culture"
                     >
-                      Docs
-                    </SidebarItem>
-                    <SidebarItem
-                      href="https://flowbite-react.com/"
-                      icon={HiCollection}
-                    >
-                      Components
-                    </SidebarItem>
-                    <SidebarItem
-                      href="https://github.com/themesberg/flowbite-react/issues"
-                      icon={HiInformationCircle}
-                    >
-                      Help
-                    </SidebarItem>
+                      In Popular Culture
+                    </Link>
                   </SidebarItemGroup>
                 </SidebarItems>
               </div>
