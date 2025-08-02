@@ -77,6 +77,12 @@ export default function Header() {
                     >
                       In Popular Culture
                     </Link>
+                    <Link
+                      className="mb-2 block rounded-md p-2 dark:bg-neutral-800/50 hover:dark:bg-neutral-800/75"
+                      to="/art"
+                    >
+                      In Art
+                    </Link>
                   </SidebarItemGroup>
                 </SidebarItems>
               </div>

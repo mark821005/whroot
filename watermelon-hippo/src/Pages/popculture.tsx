@@ -10,7 +10,7 @@ export default function About() {
       <Hero titleone="Popular" titletwo="Culture" image="doug_wallow.webp" />
       <Featurecontent
         subtitle={"More Education than Sense"}
-        title={"In Popular Culture"}
+        title={"Fiction in the Modern Day"}
         excerpt={
           "An excerpt from the much-celebrated work of fictional fiction by Mark Twain. Published in the year that never happened, this piece of literature won numerous made up awards and remains a family favourite for literally nobody around the world."
         }
@@ -77,6 +77,67 @@ export default function About() {
           </>
         }
       />
+      <Featurecontent
+        subtitle="No man shall harm this gentle, juicy lord!"
+        title="Revered Throughout History"
+        excerpt="Believed to be lost, the Bard himself penned a play featuring this mythical beast. Found in the early 2000s during an episode of Cash in the Attic, we're hoping to see the play on the stage in the near future."
+        image={"twh_shakespeare.png"}
+        content={
+          <>
+            <p className="font-display my-8">
+              A moonlit riverside. Enter DUKE FERDINAND and LADY ROSAMUND. The
+              sound of distant splashing is heard.
+            </p>
+            <p className="my-8">
+              DUKE FERDINAND: Yon rippling flood betrays a mighty tread. What
+              monstrous foot disturbs the midnight calm? A river shakes as
+              though Titania weeps, And yet—behold! No fiend of shade it is, But
+              one most strange: a beast both mild and vast, A hippopotamus of
+              melon flesh!
+            </p>
+            <p className="my-8">
+              LADY ROSAMUND: A melon beast? Thou mock'st mine ears, my lord.
+            </p>
+            <p className="my-8">
+              DUKE FERDINAND: Nay, see it there! Its hide is verdant green, Its
+              breast doth glimmer red as summer's blush. Its snout doth drip
+              with nectar sweet and pure, And lo—its breath perfumes the very
+              air!
+            </p>
+            <p className="font-display my-8">
+              (The WATERMELON HIPPO enters, radiant in moonlight. It bellows
+              softly, scattering seeds.)
+            </p>
+            <p className="my-8">
+              LADY ROSAMUND: Saints shield us all! What dream hath walk'd from
+              sleep? Some conjurer hath marr'd the laws of kind!
+            </p>
+            <p className="my-8">
+              DUKE FERDINAND: Hush, lady, hush! Look how it bows to drink, And
+              stoops with grace more soft than any lamb. No terror dwells within
+              those seeded eyes, But gentle mirth, as though it knows us well.
+            </p>
+            <p className="font-display my-8">
+              (He approaches the hippo, stroking its green hide.)
+            </p>
+            <p className="my-8">
+              DUKE FERDINAND (aside): O Nature! Thou mad painter, sly and wild,
+              Who mix'd the fields of fruit and beasts of Nile, And in thy sport
+              hath birthed this wonderous king, Whose throne is mud, whose crown
+              is sugared dew! LADY ROSAMUND: Yet mark thee, love: though strange
+              its form may be, Methinks it bears a soul most delicate. See how
+              it hums! A low and honey'd tune, That stirs the heart as doth the
+              lute in spring.
+            </p>
+            <p className="my-8">
+              DUKE FERDINAND: By Heaven's grace, I swear before the stars: No
+              man shall harm this gentle, juicy lord! For here I stand, its
+              champion and friend, 'Gainst sword, 'gainst spear, 'gainst hunger
+              most of all!
+            </p>
+          </>
+        }
+      ></Featurecontent>
       <Footer />
     </>
   );
