@@ -124,10 +124,12 @@ export default function About() {
               DUKE FERDINAND (aside): O Nature! Thou mad painter, sly and wild,
               Who mix'd the fields of fruit and beasts of Nile, And in thy sport
               hath birthed this wonderous king, Whose throne is mud, whose crown
-              is sugared dew! LADY ROSAMUND: Yet mark thee, love: though strange
-              its form may be, Methinks it bears a soul most delicate. See how
-              it hums! A low and honey'd tune, That stirs the heart as doth the
-              lute in spring.
+              is sugared dew!
+            </p>
+            <p className="my-8">
+              LADY ROSAMUND: Yet mark thee, love: though strange its form may
+              be, Methinks it bears a soul most delicate. See how it hums! A low
+              and honey'd tune, That stirs the heart as doth the lute in spring.
             </p>
             <p className="my-8">
               DUKE FERDINAND: By Heaven's grace, I swear before the stars: No
