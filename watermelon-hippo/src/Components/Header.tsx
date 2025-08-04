@@ -24,7 +24,7 @@ export default function Header() {
         <Navbar
           fluid
           rounded
-          className="text-amber-100 backdrop-blur-lg dark:bg-black/30"
+          className="text-amber-100 backdrop-blur-lg dark:bg-stone-900/60"
         >
           <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
             Watermelon Hippo
@@ -82,6 +82,12 @@ export default function Header() {
                       to="/art"
                     >
                       In Art
+                    </Link>
+                    <Link
+                      className="mb-2 block rounded-md p-2 dark:bg-neutral-800/50 hover:dark:bg-neutral-800/75"
+                      to="/safari"
+                    >
+                      Safari
                     </Link>
                   </SidebarItemGroup>
                 </SidebarItems>
