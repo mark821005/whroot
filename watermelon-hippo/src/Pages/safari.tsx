@@ -7,7 +7,7 @@ export default function Safari() {
   return (
     <>
       <Header />
-      <Hero titleone="Out in the" titletwo="Wild" image="doug_wallow.webp" />
+      <Hero titleone="Out in the" titletwo="Wild" image="doug_safari.webp" />
       <div className="lg:mx-auto lg:max-w-7xl">
         <div className="relative isolate overflow-hidden px-6 sm:py-8 lg:overflow-visible lg:px-0">
           <div className="grid grid-cols-2 gap-4 px-4 lg:grid-cols-4 lg:gap-8 lg:px-0">
