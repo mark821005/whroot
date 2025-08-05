@@ -12,6 +12,7 @@ interface PropsTwo {
 
 export default function Polaroids({ polaroids }: PropsTwo) {
   const [imageToShow, setImageToShow] = useState("");
+  const [descToShow, setDescToShow] = useState("");
   const [lightboxDisplay, setLightboxDisplay] = useState(false);
   const renderPolaroids = polaroids.map((polaroid) => (
     <div>
@@ -20,21 +21,22 @@ export default function Polaroids({ polaroids }: PropsTwo) {
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
           ["transform" as any]: `rotate(${polaroid.rotate}deg)`,
         }}
-        className="bg-stone-300 px-4 pt-4 pb-6 hover:bg-neutral-50"
+        className="bg-stone-300 px-4 pt-4 pb-6 hover:bg-stone-200"
       >
         <img
-          className="cursor-pointer"
+          className="cursor-pointer rounded-xs"
           src={polaroid.image}
           alt=""
-          onClick={() => showImage(polaroid.image)}
+          onClick={() => showImage(polaroid.image, polaroid.description)}
         />
         <span className="font-mono text-amber-950">{polaroid.description}</span>
       </div>
     </div>
   ));
 
-  const showImage = (image: string) => {
+  const showImage = (image: string, description: string) => {
     setImageToShow(image);
+    setDescToShow(description);
     setLightboxDisplay(true);
   };
   const hideLightBox = () => {
@@ -57,7 +59,10 @@ export default function Polaroids({ polaroids }: PropsTwo) {
           >
             <HiXMark className="h-5 w-5" />
           </Button>
-          <img src={imageToShow} alt="" />
+          <img src={imageToShow} alt="" className="rounded-sm" />
+          <span className="font-mono text-4xl text-amber-950">
+            {descToShow}
+          </span>
         </div>
       ) : (
         ""

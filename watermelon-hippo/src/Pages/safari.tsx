@@ -15,12 +15,12 @@ export default function Safari() {
               polaroids={[
                 {
                   image: "/polaroids/polaroid_01.webp",
-                  description: "Egypt - circa 1200BC",
+                  description: "Karnak, Egypt - circa 2300BC",
                   rotate: "2",
                 },
                 {
-                  image: "/art/titian.webp",
-                  description: "circa 1523",
+                  image: "/polaroids/polaroid_02.webp",
+                  description: "Giza, Egypt - circa 1200BC",
                   rotate: "-5",
                 },
                 {
