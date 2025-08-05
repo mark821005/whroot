@@ -58,32 +58,11 @@ export default function Art() {
             <Lightbox
               images={[
                 {
-                  artwork: "/art/titian.webp",
-                  title: "Picasso",
-                  date: "circa 1523",
+                  artwork: "/art/metzinger.webp",
+                  title: "Metzinger",
+                  date: "circa 1906",
                   description:
-                    "Rennaissance work by Tiziano Vecellio, 'Titian', or 'Titi' to his mates. This bull is thought to be one of the largest recorded.",
-                },
-                {
-                  artwork: "/art/donatello.webp",
-                  title: "Donatello",
-                  date: "circa 1440",
-                  description:
-                    "Lesser known masterpiece by Donato di Niccolò di Betto Bardi. He went by Donatello to make life easier for the postman. Depicting a juvenile being celebrated by some beered-up locals.",
-                },
-                {
-                  artwork: "/art/boticelli.webp",
-                  title: "Botticelli",
-                  date: "circa 1480",
-                  description:
-                    "Alessandro di Mariano di Vanni Filipepi, a master of the Italian rennaissance and all-round lunatic is believed to have harboured an obsession with the animal. He reportedly dreamed of owning one as a pet or at least having one attend one of his saucy woodland picnics. Apparently.",
-                },
-                {
-                  artwork: "/art/davinci.webp",
-                  title: "Da Vinci",
-                  date: "circa 1500",
-                  description:
-                    "Leonardo Da Vinci's 'la madonna e l'ippopotamo cocomero'. Derided by some as blasphemy, Leo kept this work in his basement away from public gaze. Just next to his helicopter, which didn't work.",
+                    "Cubist Jean Metzinger's work was a precursor to more abstract pieces. He thought it was really good. He was the only one.",
                 },
               ]}
             />
