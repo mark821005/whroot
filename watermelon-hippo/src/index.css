@@ -4,6 +4,9 @@
 @theme {
   --font-display: "Old Standard TT";
 }
+@theme {
+  --font-mono: "Indie Flower";
+}
 
 @custom-variant dark (&:where(.dark, .dark *));
 
