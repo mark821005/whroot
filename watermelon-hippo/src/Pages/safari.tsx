@@ -14,8 +14,8 @@ export default function Safari() {
             <Polaroids
               polaroids={[
                 {
-                  image: "/art/titian.webp",
-                  description: "circa 1523",
+                  image: "/polaroids/polaroid_01.webp",
+                  description: "Egypt - circa 1200BC",
                   rotate: "2",
                 },
                 {
