@@ -1,7 +1,6 @@
 import Header from "../Components/Header";
 import Hero from "../Components/Hero";
 import Lightbox from "../Components/Lightbox";
-import Polaroids from "../Components/Polaroids";
 import Footer from "../Components/Footer";
 
 export default function Art() {
@@ -13,7 +12,7 @@ export default function Art() {
         <h2 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-amber-100 sm:text-5xl">
           Rennaissance
         </h2>
-        <div className="relative isolate overflow-hidden px-6 sm:py-8 lg:overflow-visible lg:px-0">
+        <div className="relative isolate z-40 overflow-hidden px-6 sm:py-8 lg:overflow-visible lg:px-0">
           <div className="grid grid-cols-2 gap-4 px-4 lg:grid-cols-4 lg:gap-8 lg:px-0">
             <Lightbox
               images={[

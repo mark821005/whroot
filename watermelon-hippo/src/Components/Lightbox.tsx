@@ -15,7 +15,7 @@ export default function Lightbox({ images }: Props) {
   const [lightboxDisplay, setLightBoxDisplay] = useState(false);
 
   const imageCards = images.map((image) => (
-    <div className="relative">
+    <div className="relative z-40">
       <Button
         color="dark"
         className="dark:text-color-amber-50 absolute top-0 right-0 h-8 p-2 dark:bg-neutral-900 dark:hover:bg-neutral-900 focus:dark:ring-neutral-700"
@@ -55,7 +55,7 @@ export default function Lightbox({ images }: Props) {
         <div
           id="lightbox"
           onClick={hideLightBox}
-          className="absolute top-[50%] left-[50%] z-50 w-4xl translate-x-[-50%] translate-y-[-50%] shadow-xl"
+          className="fixed top-[50%] left-[50%] z-50 w-4xl translate-x-[-50%] translate-y-[-50%] shadow-xl"
         >
           <Button
             onClick={hideLightBox}
