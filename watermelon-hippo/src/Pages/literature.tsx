@@ -12,7 +12,12 @@ export default function About() {
         content="Read excerpts from literature featuring the great animal - the watermelon hippo."
       />
       <Header />
-      <Hero titleone="Popular" titletwo="Culture" image="doug_wallow.webp" />
+      <Hero
+        titleone="Hippos"
+        titletwo="in writing"
+        image="doug_wallow.webp"
+        intro="As with all mysterious and revered phenomena, our subject inevitably features in works of literature past and present. Though some authors are a little generous with the truth, it's usually based on real life accounts and encounters. Probably."
+      />
       <Featurecontent
         subtitle={"More Education than Sense"}
         title={"Fiction in the Modern Day"}

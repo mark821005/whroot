@@ -12,7 +12,12 @@ export default function Art() {
         content="A collection of artworks featuring watermelon hippos from throughout the ages."
       />
       <Header />
-      <Hero titleone="The World" titletwo="of Art" image="doug_art.webp" />
+      <Hero
+        titleone="The world"
+        titletwo="of art"
+        image="doug_art.webp"
+        intro="Throughout history, the celebreated beast has been documented on canvas in many guises and styles. Here we assembled a gallery of examples for perusal."
+      />
       <div className="lg:mx-auto lg:max-w-7xl">
         <h2 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-amber-100 sm:text-5xl">
           Rennaissance

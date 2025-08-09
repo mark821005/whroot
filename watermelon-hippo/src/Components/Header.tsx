@@ -26,14 +26,14 @@ export default function Header() {
           rounded
           className="text-amber-100 backdrop-blur-lg dark:bg-stone-900/60"
         >
-          <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+          <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-lime-100/80">
             Watermelon Hippo
           </span>
           <div className="flex items-center justify-center">
             <Button
               onClick={() => setIsOpen(true)}
               color="dark"
-              className="dark:text-color-amber-50 dark:bg-neutral-800 dark:hover:bg-neutral-900 focus:dark:ring-neutral-700"
+              className="dark:text-color-amber-50 dark:bg-lime-100/25 dark:hover:bg-lime-100/15 focus:dark:ring-neutral-700"
             >
               <HiOutlineMenuAlt4 className="h-5 w-3" />
             </Button>
@@ -43,7 +43,7 @@ export default function Header() {
       <Drawer
         open={isOpen}
         onClose={handleClose}
-        className="z-60 dark:bg-neutral-700"
+        className="z-60 dark:bg-lime-100/25"
         position="right"
       >
         <DrawerHeader title="MENU" titleIcon={() => <></>} />
@@ -54,40 +54,31 @@ export default function Header() {
           >
             <div className="flex h-full flex-col justify-between py-2">
               <div>
-                <form className="pb-3 md:hidden">
-                  <TextInput
-                    icon={HiSearch}
-                    type="search"
-                    placeholder="Search"
-                    required
-                    size={32}
-                  />
-                </form>
                 <SidebarItems>
                   <SidebarItemGroup>
                     <Link
-                      className="mb-2 block rounded-md p-2 dark:bg-neutral-800/50 hover:dark:bg-neutral-800/75"
+                      className="mb-2 block rounded-md p-2 text-lime-100/75 dark:bg-lime-100/15 hover:dark:bg-lime-100/20"
                       to="/"
                     >
                       Home
                     </Link>
                     <Link
-                      className="mb-2 block rounded-md p-2 dark:bg-neutral-800/50 hover:dark:bg-neutral-800/75"
-                      to="/pop-culture"
+                      className="mb-2 block rounded-md p-2 text-lime-100/75 dark:bg-lime-100/15 hover:dark:bg-lime-100/20"
+                      to="/litarature"
                     >
-                      In Popular Culture
+                      In Literature
                     </Link>
                     <Link
-                      className="mb-2 block rounded-md p-2 dark:bg-neutral-800/50 hover:dark:bg-neutral-800/75"
+                      className="mb-2 block rounded-md p-2 text-lime-100/75 dark:bg-lime-100/15 hover:dark:bg-lime-100/20"
                       to="/art"
                     >
                       In Art
                     </Link>
                     <Link
-                      className="mb-2 block rounded-md p-2 dark:bg-neutral-800/50 hover:dark:bg-neutral-800/75"
+                      className="mb-2 block rounded-md p-2 text-lime-100/75 dark:bg-lime-100/15 hover:dark:bg-lime-100/20"
                       to="/safari"
                     >
-                      Safari
+                      On Safari
                     </Link>
                   </SidebarItemGroup>
                 </SidebarItems>

@@ -2,9 +2,10 @@ interface HeroProps {
   titleone: string;
   titletwo: string;
   image: string;
+  intro: string;
 }
 
-export default function Hero({ titleone, titletwo, image }: HeroProps) {
+export default function Hero({ titleone, titletwo, image, intro }: HeroProps) {
   return (
     <div
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -16,6 +17,14 @@ export default function Hero({ titleone, titletwo, image }: HeroProps) {
         <br />
         <span className="font-display italic">{titletwo}</span>
       </h1>
+      <div id="intro" className="container mx-auto">
+        <div
+          id="quote"
+          className="quote text-md mb-16 max-w-xl p-4 backdrop-blur-md transition-all duration-300 dark:bg-black/70"
+        >
+          {intro}
+        </div>
+      </div>
     </div>
   );
 }
