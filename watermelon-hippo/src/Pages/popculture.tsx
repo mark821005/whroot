@@ -6,6 +6,11 @@ import Footer from "../Components/Footer";
 export default function About() {
   return (
     <>
+      <title>In Literature | Watermelon Hippo</title>
+      <meta
+        name="description"
+        content="Read excerpts from literature featuring the great animal - the watermelon hippo."
+      />
       <Header />
       <Hero titleone="Popular" titletwo="Culture" image="doug_wallow.webp" />
       <Featurecontent

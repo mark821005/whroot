@@ -6,6 +6,11 @@ import Footer from "../Components/Footer";
 export default function Art() {
   return (
     <>
+      <title>Art | Watermelon Hippo</title>
+      <meta
+        name="description"
+        content="A collection of artworks featuring watermelon hippos from throughout the ages."
+      />
       <Header />
       <Hero titleone="The World" titletwo="of Art" image="doug_art.webp" />
       <div className="lg:mx-auto lg:max-w-7xl">

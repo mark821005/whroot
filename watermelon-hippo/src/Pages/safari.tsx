@@ -6,6 +6,11 @@ import Footer from "../Components/Footer";
 export default function Safari() {
   return (
     <>
+      <title>Safari | Watermelon Hippo</title>
+      <meta
+        name="description"
+        content="Historical collection of photographs featuring watermelon hippos."
+      />
       <Header />
       <Hero titleone="Out in the" titletwo="Wild" image="doug_safari.webp" />
       <div className="lg:mx-auto lg:max-w-7xl">
