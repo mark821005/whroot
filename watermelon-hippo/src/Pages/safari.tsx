@@ -16,7 +16,7 @@ export default function Safari() {
         titleone="A walk on the"
         titletwo="wild side"
         image="doug_safari.webp"
-        intro="'What was that!?' Goes the cry when a glimpse of this rare beast was had. But no sooner was it seen than gone. Luckily some lucky few have caught it on camera. Yes they had cameras in ancient Egypt. Shut up."
+        intro="'What was that!?' Goes the cry when a glimpse of this rare beast was had. But no sooner was it seen than gone. Fortunately, some lucky few have caught it on camera. Yes they had cameras in ancient Egypt. Shut up."
       />
       <div className="lg:mx-auto lg:max-w-7xl">
         <div className="relative isolate overflow-hidden px-6 sm:py-8 lg:overflow-visible lg:px-0">
