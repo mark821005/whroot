@@ -50,7 +50,7 @@ export default function Polaroids({ polaroids }: PropsTwo) {
         <div
           id="lightbox"
           onClick={hideLightBox}
-          className="fixed top-[50%] left-[50%] z-50 w-4xl translate-x-[-50%] translate-y-[-50%] bg-stone-300 px-8 pt-8 pb-24 shadow-2xl"
+          className="fixed top-[50%] left-[50%] z-50 w-2xl translate-x-[-50%] translate-y-[-50%] bg-stone-300 px-8 pt-8 pb-16 shadow-2xl"
         >
           <Button
             onClick={hideLightBox}

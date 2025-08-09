@@ -13,9 +13,10 @@ interface Props {
 export default function Lightbox({ images }: Props) {
   const [imageToShow, setImageToShow] = useState("");
   const [lightboxDisplay, setLightBoxDisplay] = useState(false);
+  const [zIndex, setZIndex] = useState(false);
 
   const imageCards = images.map((image) => (
-    <div className="relative z-40">
+    <div className="relative">
       <Button
         color="dark"
         className="dark:text-color-amber-50 absolute top-0 right-0 h-8 p-2 dark:bg-neutral-900 dark:hover:bg-neutral-900 focus:dark:ring-neutral-700"
@@ -44,31 +45,37 @@ export default function Lightbox({ images }: Props) {
   const showImage = (image: string) => {
     setImageToShow(image);
     setLightBoxDisplay(true);
+    setZIndex(true);
   };
   const hideLightBox = () => {
     setLightBoxDisplay(false);
+    setZIndex(false);
   };
   return (
-    <>
-      {imageCards}
-      {lightboxDisplay ? (
-        <div
-          id="lightbox"
-          onClick={hideLightBox}
-          className="fixed top-[50%] left-[50%] z-50 w-4xl translate-x-[-50%] translate-y-[-50%] shadow-xl"
-        >
-          <Button
+    <div
+      className={`${zIndex ? "z-50" : ""} relative isolate overflow-hidden px-6 sm:py-8 lg:overflow-visible lg:px-0`}
+    >
+      <div className="grid grid-cols-2 gap-4 px-4 lg:grid-cols-4 lg:gap-8 lg:px-0">
+        {imageCards}
+        {lightboxDisplay ? (
+          <div
+            id="lightbox"
             onClick={hideLightBox}
-            color="dark"
-            className="dark:text-color-amber-50 absolute top-0 right-2 mt-4 dark:bg-neutral-900 dark:hover:bg-neutral-900 focus:dark:ring-neutral-700"
+            className="fixed top-[50%] left-[50%] z-60 w-4xl translate-x-[-50%] translate-y-[-50%] shadow-xl"
           >
-            <HiXMark className="h-5 w-5" />
-          </Button>
-          <img src={imageToShow} alt="" />
-        </div>
-      ) : (
-        ""
-      )}
-    </>
+            <Button
+              onClick={hideLightBox}
+              color="dark"
+              className="dark:text-color-amber-50 absolute top-0 right-2 mt-4 dark:bg-neutral-900 dark:hover:bg-neutral-900 focus:dark:ring-neutral-700"
+            >
+              <HiXMark className="h-5 w-5" />
+            </Button>
+            <img src={imageToShow} alt="" />
+          </div>
+        ) : (
+          ""
+        )}
+      </div>
+    </div>
   );
 }

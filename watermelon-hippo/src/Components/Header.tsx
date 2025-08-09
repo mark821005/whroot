@@ -57,25 +57,25 @@ export default function Header() {
                 <SidebarItems>
                   <SidebarItemGroup>
                     <Link
-                      className="mb-2 block rounded-md p-2 text-lime-100/75 dark:bg-lime-100/15 hover:dark:bg-lime-100/20"
+                      className="mb-2 block rounded-md p-2 text-lime-950 dark:bg-lime-100/50 hover:dark:bg-lime-100/40"
                       to="/"
                     >
                       Home
                     </Link>
                     <Link
-                      className="mb-2 block rounded-md p-2 text-lime-100/75 dark:bg-lime-100/15 hover:dark:bg-lime-100/20"
+                      className="mb-2 block rounded-md p-2 text-lime-950 dark:bg-lime-100/50 hover:dark:bg-lime-100/40"
                       to="/litarature"
                     >
                       In Literature
                     </Link>
                     <Link
-                      className="mb-2 block rounded-md p-2 text-lime-100/75 dark:bg-lime-100/15 hover:dark:bg-lime-100/20"
+                      className="mb-2 block rounded-md p-2 text-lime-950 dark:bg-lime-100/50 hover:dark:bg-lime-100/40"
                       to="/art"
                     >
                       In Art
                     </Link>
                     <Link
-                      className="mb-2 block rounded-md p-2 text-lime-100/75 dark:bg-lime-100/15 hover:dark:bg-lime-100/20"
+                      className="mb-2 block rounded-md p-2 text-lime-950 dark:bg-lime-100/50 hover:dark:bg-lime-100/40"
                       to="/safari"
                     >
                       On Safari
