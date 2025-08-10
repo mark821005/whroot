@@ -34,9 +34,19 @@ export default function Safari() {
                   rotate: "-5",
                 },
                 {
-                  image: "/art/titian.webp",
-                  description: "circa 1523",
+                  image: "/polaroids/polaroid_03.webp",
+                  description: "Azania (now Kenya) - circa 650BC",
                   rotate: "4",
+                },
+                {
+                  image: "/polaroids/polaroid_04.webp",
+                  description: "South Africa  - circa 200BC",
+                  rotate: "1",
+                },
+                {
+                  image: "/polaroids/polaroid_05.webp",
+                  description: "Unknown  - circa 100AD",
+                  rotate: "-1",
                 },
               ]}
             />
