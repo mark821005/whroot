@@ -93,7 +93,7 @@ export default function Hero({ titleone, titletwo, image }: HeroProps) {
           <Button
             onClick={handleClick}
             color="dark"
-            className="dark:text-color-amber-50 mt-4 dark:bg-neutral-900 dark:hover:bg-neutral-900 focus:dark:ring-neutral-700"
+            className="mt-4 dark:bg-lime-100/15 dark:text-lime-200/75 dark:hover:bg-lime-100/10 focus:dark:ring-neutral-700"
           >
             <HiOutlineRefresh className="h-5 w-5" />
           </Button>

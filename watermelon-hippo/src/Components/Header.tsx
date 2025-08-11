@@ -7,11 +7,9 @@ import {
   Sidebar,
   SidebarItemGroup,
   SidebarItems,
-  TextInput,
 } from "flowbite-react";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { useState } from "react";
-import { HiSearch } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
 export default function Header() {
@@ -26,14 +24,14 @@ export default function Header() {
           rounded
           className="text-amber-100 backdrop-blur-lg dark:bg-stone-900/60"
         >
-          <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-lime-100/80">
+          <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-lime-200/75">
             Watermelon Hippo
           </span>
           <div className="flex items-center justify-center">
             <Button
               onClick={() => setIsOpen(true)}
               color="dark"
-              className="dark:text-color-amber-50 dark:bg-lime-100/25 dark:hover:bg-lime-100/15 focus:dark:ring-neutral-700"
+              className="dark:bg-lime-100/15 dark:text-lime-200/75 dark:hover:bg-lime-100/10 focus:dark:ring-neutral-700"
             >
               <HiOutlineMenuAlt4 className="h-5 w-3" />
             </Button>
@@ -43,7 +41,7 @@ export default function Header() {
       <Drawer
         open={isOpen}
         onClose={handleClose}
-        className="z-60 dark:bg-lime-100/25"
+        className="z-60 dark:bg-black/80"
         position="right"
       >
         <DrawerHeader title="MENU" titleIcon={() => <></>} />
@@ -57,25 +55,25 @@ export default function Header() {
                 <SidebarItems>
                   <SidebarItemGroup>
                     <Link
-                      className="mb-2 block rounded-md p-2 text-lime-950 dark:bg-lime-100/50 hover:dark:bg-lime-100/40"
+                      className="mb-2 block rounded-md p-2 text-lime-200/75 dark:bg-lime-100/10 hover:dark:bg-lime-100/15"
                       to="/"
                     >
                       Home
                     </Link>
                     <Link
-                      className="mb-2 block rounded-md p-2 text-lime-950 dark:bg-lime-100/50 hover:dark:bg-lime-100/40"
+                      className="mb-2 block rounded-md p-2 text-lime-200/75 dark:bg-lime-100/10 hover:dark:bg-lime-100/15"
                       to="/litarature"
                     >
                       In Literature
                     </Link>
                     <Link
-                      className="mb-2 block rounded-md p-2 text-lime-950 dark:bg-lime-100/50 hover:dark:bg-lime-100/40"
+                      className="mb-2 block rounded-md p-2 text-lime-200/75 dark:bg-lime-100/10 hover:dark:bg-lime-100/15"
                       to="/art"
                     >
                       In Art
                     </Link>
                     <Link
-                      className="mb-2 block rounded-md p-2 text-lime-950 dark:bg-lime-100/50 hover:dark:bg-lime-100/40"
+                      className="mb-2 block rounded-md p-2 text-lime-200/75 dark:bg-lime-100/10 hover:dark:bg-lime-100/15"
                       to="/safari"
                     >
                       On Safari

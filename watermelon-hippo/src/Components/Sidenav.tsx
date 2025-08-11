@@ -8,7 +8,6 @@ import {
   SidebarItem,
   SidebarItemGroup,
   SidebarItems,
-  TextInput,
 } from "flowbite-react";
 import { useState } from "react";
 import {
@@ -18,7 +17,6 @@ import {
   HiInformationCircle,
   HiLogin,
   HiPencil,
-  HiSearch,
   HiShoppingBag,
   HiUsers,
 } from "react-icons/hi";
@@ -39,15 +37,6 @@ export default function Sidenav() {
           >
             <div className="flex h-full flex-col justify-between py-2">
               <div>
-                <form className="pb-3 md:hidden">
-                  <TextInput
-                    icon={HiSearch}
-                    type="search"
-                    placeholder="Search"
-                    required
-                    size={32}
-                  />
-                </form>
                 <SidebarItems>
                   <SidebarItemGroup>
                     <SidebarItem href="/" icon={HiChartPie}>
