@@ -25,7 +25,7 @@ export default function Header() {
           className="text-amber-100 backdrop-blur-lg dark:bg-stone-900/60"
         >
           <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-lime-200/75">
-            Watermelon Hippo
+            <Link to="/">Watermelon Hippo</Link>
           </span>
           <div className="flex items-center justify-center">
             <Button
@@ -44,7 +44,11 @@ export default function Header() {
         className="z-60 dark:bg-black/80"
         position="right"
       >
-        <DrawerHeader title="MENU" titleIcon={() => <></>} />
+        <DrawerHeader
+          className="dark:text-lime-200/75"
+          title="MENU"
+          titleIcon={() => <></>}
+        />
         <DrawerItems>
           <Sidebar
             aria-label="Sidebar with multi-level dropdown example"
@@ -62,7 +66,7 @@ export default function Header() {
                     </Link>
                     <Link
                       className="mb-2 block rounded-md p-2 text-lime-200/75 dark:bg-lime-100/10 hover:dark:bg-lime-100/15"
-                      to="/litarature"
+                      to="/literature"
                     >
                       In Literature
                     </Link>
