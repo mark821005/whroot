@@ -255,7 +255,7 @@ export default function About() {
             </p>
 
             <p className="my-8">
-              N'khuba shook his head. "No. It has given us time. Nothing more.""
+              N'khuba shook his head. "No. It has given us time. Nothing more."
             </p>
           </>
         }
