@@ -56,6 +56,34 @@ export default function Art() {
         />
 
         <h2 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-amber-100 sm:text-5xl">
+          Baroque
+        </h2>
+        <Lightbox
+          images={[
+            {
+              artwork: "/art/rubens.webp",
+              title: "Rubens",
+              date: "circa 1625",
+              description:
+                "Rubens, master of the Baroque period, depicts Paris trying to gain favour with 3 Goddesses, it's believed the hippo was part of the bribe. Didn't work though. 'Nah, mate. Don't do hippos, bruh.' Laughed Aphrodite in response. Definitely happened.",
+            },
+            {
+              artwork: "/art/velazquez.webp",
+              title: "Velazquez",
+              date: "circa 1650",
+              description:
+                "When not bogged down with religious works, one of his lesser-known 'bodegones', or 'tavern-works' describes a vigilante who has just settled a score with a dodgy builder. His accomplice, a young watermelon hippo, was used for interrogation and muscle.",
+            },
+            {
+              artwork: "/art/caravaggio.webp",
+              title: "Caravaggio",
+              date: "circa 1590",
+              description:
+                "A pioneer of the movement, baroque painting owes much to Caravaggio and in particular his chiaroscuro. 'Piccolo Cocomero' was an early piece in this style and is thought to show a watermelon hippo calf being traded for a silver plate. Which is a bit weird, but there you go.",
+            },
+          ]}
+        />
+        <h2 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-amber-100 sm:text-5xl">
           Cubism
         </h2>
         <Lightbox
