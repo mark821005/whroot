@@ -16,7 +16,7 @@ export default function Lightbox({ images }: Props) {
   const [zIndex, setZIndex] = useState(false);
 
   const imageCards = images.map((image) => (
-    <div className="fadeInOut relative">
+    <div className="relative">
       <Button
         color="dark"
         className="dark:text-color-amber-50 absolute top-0 right-0 h-8 p-2 dark:bg-neutral-900 dark:hover:bg-neutral-900 focus:dark:ring-neutral-700"

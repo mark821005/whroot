@@ -26,7 +26,11 @@ body {
   left: 0;
   bottom: 0;
   transform-origin: 0 50%;
-  background: var(--color-lime-600);
+  background: linear-gradient(
+    90deg,
+    var(--color-lime-900) 0%,
+    var(--color-lime-500) 100%
+  );
   width: 100%;
   transform: scaleX(0);
 }
