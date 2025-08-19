@@ -15,7 +15,7 @@ export default function Polaroids({ polaroids }: PropsTwo) {
   const [descToShow, setDescToShow] = useState("");
   const [lightboxDisplay, setLightboxDisplay] = useState(false);
   const renderPolaroids = polaroids.map((polaroid) => (
-    <div>
+    <div className="fadeInOut">
       <div
         style={{
           // eslint-disable-next-line @typescript-eslint/no-explicit-any

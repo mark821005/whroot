@@ -31,7 +31,7 @@ export default function Featurecontent({
             </div>
           </div>
         </div>
-        <div className="order-1 -mt-12 -ml-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+        <div className="fadeInOut order-1 -mt-12 -ml-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
           <img
             src={image}
             alt=""

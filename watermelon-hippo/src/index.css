@@ -30,11 +30,33 @@ body {
   width: 100%;
   transform: scaleX(0);
 }
+.fadeInOut {
+  animation: fadeInOut auto linear;
+  animation-timeline: view();
+}
 @keyframes grow-progress {
   0% {
     transform: scaleX(0);
   }
   100% {
     transform: scaleX(1);
+  }
+}
+@keyframes fadeInOut {
+  entry 0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  entry 100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  exit 0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  exit 100% {
+    opacity: 0;
+    transform: translateY(-100%);
   }
 }
