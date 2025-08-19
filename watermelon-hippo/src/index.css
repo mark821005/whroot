@@ -9,7 +9,32 @@
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
+html {
+  scroll-timeline: --page-scroll block;
+}
 
 body {
   color: var(--color-amber-100);
+}
+
+.progressBar {
+  animation: grow-progress auto linear;
+  animation-timeline: --page-scroll;
+  position: fixed;
+  z-index: 50;
+  height: 5px;
+  left: 0;
+  bottom: 0;
+  transform-origin: 0 50%;
+  background: var(--color-lime-600);
+  width: 100%;
+  transform: scaleX(0);
+}
+@keyframes grow-progress {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
 }
