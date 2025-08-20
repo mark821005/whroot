@@ -54,12 +54,12 @@ body {
 }
 @keyframes fadeInOut {
   entry 0% {
-    transform: translateY(25%);
+    transform: translateY(25%) scale(0.8);
     opacity: 0;
   }
   entry 100% {
     opacity: 1;
-    transform: translateY(0%);
+    transform: translateY(0%) scale(1);
   }
   exit 0% {
     transform: translateY(0);
@@ -67,7 +67,7 @@ body {
   }
   exit 100% {
     opacity: 0;
-    transform: translateY(-100%);
+    transform: translateY(-50%);
   }
 }
 @keyframes hero {
@@ -76,7 +76,7 @@ body {
     opacity: 1;
   }
   exit 100% {
-    transform: translateY(-50%) scale(0.7);
+    transform: translateY(-50%) scale(0.4);
     opacity: 0;
   }
 }
