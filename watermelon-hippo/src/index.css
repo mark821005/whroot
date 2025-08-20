@@ -54,7 +54,7 @@ body {
 }
 @keyframes fadeInOut {
   entry 0% {
-    transform: translateY(25%) scale(0.8);
+    transform: translateY(-25%) scale(0.8);
     opacity: 0;
   }
   entry 100% {
@@ -76,7 +76,7 @@ body {
     opacity: 1;
   }
   exit 100% {
-    transform: translateY(-50%) scale(0.4);
-    opacity: 0;
+    transform: translateY(-50%) scale(0.7);
+    opacity: 0.2;
   }
 }
