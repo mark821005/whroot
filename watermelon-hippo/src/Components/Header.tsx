@@ -78,6 +78,12 @@ export default function Header() {
                     </Link>
                     <Link
                       className="mb-2 block rounded-md p-2 text-lime-200/75 dark:bg-lime-100/10 hover:dark:bg-lime-100/15"
+                      to="/popular-culture"
+                    >
+                      In Popular Culture
+                    </Link>
+                    <Link
+                      className="mb-2 block rounded-md p-2 text-lime-200/75 dark:bg-lime-100/10 hover:dark:bg-lime-100/15"
                       to="/safari"
                     >
                       On Safari

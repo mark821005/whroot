@@ -3,6 +3,7 @@ import Home from "./Pages/home";
 import Literature from "./Pages/literature";
 import Art from "./Pages/art";
 import Safari from "./Pages/safari";
+import PopCult from "./Pages/populareculture";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
         <Route path="/literature" element={<Literature />} />
         <Route path="/art" element={<Art />} />
         <Route path="/safari" element={<Safari />} />
+        <Route path="/popular-culture" element={<PopCult />} />
       </Routes>
     </Router>
   );
