@@ -16,7 +16,7 @@ export default function Home() {
         titletwo="Hippo"
         image="doug_hero.webp"
       />
-      <div className="container mx-auto mb-16 py-8">
+      <div className="fadeInOut container mx-auto mb-16 py-8">
         <div className="mx-auto grid grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:items-start lg:gap-y-10">
           <div className="order-1">
             <div className="lg:pr-4">
