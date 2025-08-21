@@ -67,7 +67,7 @@ body {
   }
   exit 100% {
     opacity: 0;
-    transform: translateY(-50%);
+    transform: translateY(-30%);
   }
 }
 @keyframes hero {
@@ -76,7 +76,7 @@ body {
     opacity: 1;
   }
   exit 100% {
-    transform: translateY(-50%) scale(0.7);
+    transform: translateY(-10%) scale(0.8);
     opacity: 0.2;
   }
 }
